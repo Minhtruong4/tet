@@ -1,0 +1,31 @@
+kind = "web"
+previewPath = "/"
+title = "Oculus Noctis"
+version = "1.0.0"
+id = "artifacts/oculus-noctis"
+router = "path"
+
+[[integratedSkills]]
+name = "react-vite"
+version = "1.0.0"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 25002
+
+[services.development]
+run = "pnpm --filter @workspace/oculus-noctis run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/oculus-noctis", "run", "build" ]
+publicDir = "artifacts/oculus-noctis/dist/public"
+serve = "static"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "25002"
+BASE_PATH = "/"
