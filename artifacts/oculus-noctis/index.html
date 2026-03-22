@@ -1,18 +1,484 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
-    <title>Oculus Noctis – Silver Accessories</title>
-    <meta name="description" content="Oculus Noctis – Handcrafted 925 sterling silver accessories. Rings, necklaces, bracelets and earrings for those who embrace the dark aesthetic." />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Oculus Noctis – Handcrafted 925 sterling silver accessories. Rings, necklaces, bracelets and earrings crafted for the bold.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Oculus Noctis – Silver Accessories</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <section id="header">
+        <a href="#" class="logo-text">Oculus Noctis</a>
+        <div>
+            <ul id="navbar">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#product1">Shop</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#footer">Contact</a></li>
+                <li id="lg-bag"><a href="#" id="cart-icon"><i class="fa-solid fa-cart-shopping"></i><span id="cart-count"></span></a></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Hero -->
+    <section id="hero">
+        <div class="hero-label"><span class="hero-line"></span>New Collection 2026</div>
+        <h1>WEAR THE<br>NIGHT</h1>
+        <h2>Silver accessories crafted for those<br>who embrace the dark aesthetic</h2>
+        <button onclick="document.getElementById('product1').scrollIntoView({behavior:'smooth'})">Explore Collection</button>
+    </section>
+
+    <!-- Features -->
+    <section id="feature" class="section-p1">
+        <div class="fe-box">
+            <i class="fa-solid fa-truck fe-icon"></i>
+            <h6>Free Shipping</h6>
+        </div>
+        <div class="fe-box">
+            <i class="fa-solid fa-shield-halved fe-icon"></i>
+            <h6>Secure Order</h6>
+        </div>
+        <div class="fe-box">
+            <i class="fa-solid fa-tag fe-icon"></i>
+            <h6>Best Prices</h6>
+        </div>
+        <div class="fe-box">
+            <i class="fa-solid fa-gem fe-icon"></i>
+            <h6>925 Silver</h6>
+        </div>
+        <div class="fe-box">
+            <i class="fa-solid fa-hand-sparkles fe-icon"></i>
+            <h6>Handcrafted</h6>
+        </div>
+        <div class="fe-box">
+            <i class="fa-solid fa-headset fe-icon"></i>
+            <h6>24/7 Support</h6>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section id="product1" class="section-p1">
+        <h2>Featured Collection</h2>
+        <p class="section-sub">Our Bestsellers</p>
+        <div class="pro-container">
+
+            <div class="pro" data-long-desc="Delicately crafted from 925 sterling silver, the Crescent Moon Ring features a slender crescent arc that catches the light beautifully. Each curve is hand-polished to a mirror finish, giving it that distinctive silver shimmer. Perfect for stacking or wearing solo.">
+                <div class="img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=600&q=80&fit=crop" alt="Crescent Moon Ring">
+                </div>
+                <div class="des">
+                    <span>Silver Ring Collection</span>
+                    <h5>Crescent Moon Ring</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <h4>$28.00</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-plus cart"></i></a>
+            </div>
+
+            <div class="pro" data-long-desc="Inspired by ancient symbolism, this Serpent Coil Ring wraps around the finger in a graceful spiral. Crafted in oxidized sterling silver for depth and contrast, with polished scales that catch the eye. A bold statement piece.">
+                <div class="img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=600&q=80&fit=crop" alt="Serpent Coil Ring">
+                </div>
+                <div class="des">
+                    <span>Silver Ring Collection</span>
+                    <h5>Serpent Coil Ring</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <h4>$35.00</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-plus cart"></i></a>
+            </div>
+
+            <div class="pro" data-long-desc="A striking contrast of polished silver band with a natural obsidian centerpiece. The deep black stone absorbs the light while the silver frame radiates around it. Handcrafted and one-of-a-kind.">
+                <div class="img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1573408301185-9519f7988ef9?w=600&q=80&fit=crop" alt="Obsidian Stone Ring">
+                </div>
+                <div class="des">
+                    <span>Silver Ring Collection</span>
+                    <h5>Obsidian Stone Ring</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <h4>$42.00</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-plus cart"></i></a>
+            </div>
+
+            <div class="pro" data-long-desc="A timeless eternity band set with pavé-style silver beads running the full circumference. The uniform shimmer creates an unbroken circle of light. Elegant, minimal, and forever wearable.">
+                <div class="img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?w=600&q=80&fit=crop" alt="Eternity Band">
+                </div>
+                <div class="des">
+                    <span>Silver Ring Collection</span>
+                    <h5>Eternity Band</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <h4>$55.00</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-plus cart"></i></a>
+            </div>
+
+            <div class="pro" data-long-desc="A sleek teardrop pendant in brushed sterling silver hangs from a delicate 45cm chain. The subtle matte finish gives it a sophisticated, understated look that transitions seamlessly from day to night.">
+                <div class="img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1611591437281-460bfbe1220a?w=600&q=80&fit=crop" alt="Midnight Drop Pendant">
+                </div>
+                <div class="des">
+                    <span>Silver Necklace Collection</span>
+                    <h5>Midnight Drop Pendant</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <h4>$38.00</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-plus cart"></i></a>
+            </div>
+
+            <div class="pro" data-long-desc="A curated set of three layering necklaces — a simple chain, a moon pendant, and a star burst — designed to be worn together. Each piece is crafted in polished sterling silver and comes at different lengths for perfect layering.">
+                <div class="img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1506630268641-e8f06f93b13b?w=600&q=80&fit=crop" alt="Celestial Layering Set">
+                </div>
+                <div class="des">
+                    <span>Silver Necklace Collection</span>
+                    <h5>Celestial Layering Set</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <h4>$65.00</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-plus cart"></i></a>
+            </div>
+
+            <div class="pro" data-long-desc="A boldly elegant choker featuring a sculpted raven feather cast in sterling silver. The feather's fine details are highlighted with a partial oxidized finish, creating beautiful shadow and depth.">
+                <div class="img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1617038260897-41a533f4c6c2?w=600&q=80&fit=crop" alt="Raven Feather Choker">
+                </div>
+                <div class="des">
+                    <span>Silver Necklace Collection</span>
+                    <h5>Raven Feather Choker</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <h4>$48.00</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-plus cart"></i></a>
+            </div>
+
+            <div class="pro" data-long-desc="Minimalism at its finest — a perfect open circle in polished sterling silver. The simple geometry makes a powerful statement. Pair with a classic chain or a delicate cord. Ideal for everyday elegance.">
+                <div class="img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1630019852942-f89202989a59?w=600&q=80&fit=crop" alt="Void Circle Pendant">
+                </div>
+                <div class="des">
+                    <span>Silver Necklace Collection</span>
+                    <h5>Void Circle Pendant</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <h4>$32.00</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-plus cart"></i></a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- About Banner -->
+    <section id="about" class="section-m1">
+        <h2>Oculus Noctis</h2>
+        <h4>Crafted for the bold. Worn by the rare. Each piece is handcrafted from 925 sterling silver, designed to last a lifetime and tell your story.</h4>
+        <button class="normal"
+            data-name="About Oculus Noctis"
+            data-short-desc="Our Story"
+            data-long-desc="Oculus Noctis is a silver accessories brand rooted in dark elegance. Every ring, necklace, bracelet, and earring is meticulously crafted from 925 sterling silver. We believe in accessories that make a statement — understated power, timeless craft, and the quiet allure of silver against darkness. Our pieces are designed for those who see beauty in shadows and wear their identity with quiet confidence.">
+            Our Story
+        </button>
+    </section>
+
+    <!-- New Arrivals -->
+    <section id="product1" class="section-p1" style="background:#0a0a0a;">
+        <h2>New Arrivals</h2>
+        <p class="section-sub">Just Dropped</p>
+        <div class="pro-container">
+
+            <div class="pro" data-long-desc="A bold open cuff bracelet in oxidized sterling silver with onyx stone inlay. The juxtaposition of matte black and polished silver creates a dramatic effect. Adjustable for most wrist sizes.">
+                <div class="img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1573223510329-b594793c3ce0?w=600&q=80&fit=crop" alt="Onyx Cuff">
+                </div>
+                <div class="des">
+                    <span>Silver Bracelet Collection</span>
+                    <h5>Onyx Cuff</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <h4>$60.00</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-plus cart"></i></a>
+            </div>
+
+            <div class="pro" data-long-desc="Classic chunky chain links rendered in polished sterling silver. Each link is precisely cast and connected by hand. A versatile piece that works alone or layered with other bracelets.">
+                <div class="img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1611652022419-a9419f74343d?w=600&q=80&fit=crop" alt="Chain Link Bracelet">
+                </div>
+                <div class="des">
+                    <span>Silver Bracelet Collection</span>
+                    <h5>Chain Link Bracelet</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <h4>$45.00</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-plus cart"></i></a>
+            </div>
+
+            <div class="pro" data-long-desc="An architectural bangle studded with small spike details that run along the surface. Made from solid sterling silver, it's substantial enough to make a statement without being bulky.">
+                <div class="img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=600&q=80&fit=crop" alt="Thorned Bangle">
+                </div>
+                <div class="des">
+                    <span>Silver Bracelet Collection</span>
+                    <h5>Thorned Bangle</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <h4>$52.00</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-plus cart"></i></a>
+            </div>
+
+            <div class="pro" data-long-desc="Three fine silver wires twisted together into a seamless braid. The intertwined structure catches light at every angle, creating a fluid, dynamic shimmer. Simple yet endlessly elegant.">
+                <div class="img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1602173574767-37ac01994b2a?w=600&q=80&fit=crop" alt="Twisted Wire Bracelet">
+                </div>
+                <div class="des">
+                    <span>Silver Bracelet Collection</span>
+                    <h5>Twisted Wire Bracelet</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <h4>$38.00</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-plus cart"></i></a>
+            </div>
+
+            <div class="pro" data-long-desc="Angular geometric drops in polished sterling silver that move beautifully with you. The faceted design refracts light in every direction, making even small movements shimmer.">
+                <div class="img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1588444837495-c6cfeb53f32d?w=600&q=80&fit=crop" alt="Geometric Drop Earrings">
+                </div>
+                <div class="des">
+                    <span>Silver Earring Collection</span>
+                    <h5>Geometric Drop Earrings</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <h4>$34.00</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-plus cart"></i></a>
+            </div>
+
+            <div class="pro" data-long-desc="Sculptural crescent-shaped hoops that sit close to the ear. Crafted in polished sterling silver, they are lightweight yet visually impactful. A modern take on the classic hoop.">
+                <div class="img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1590548784585-643d2b9f2925?w=600&q=80&fit=crop" alt="Crescent Hoops">
+                </div>
+                <div class="des">
+                    <span>Silver Earring Collection</span>
+                    <h5>Crescent Hoops</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <h4>$28.00</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-plus cart"></i></a>
+            </div>
+
+            <div class="pro" data-long-desc="Small but powerful — sterling silver spike studs with a polished finish. These pair perfectly with any look, from casual to formal. Secure butterfly clasp for all-day comfort.">
+                <div class="img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1570913149827-d2ac81a9b01e?w=600&q=80&fit=crop" alt="Spike Studs">
+                </div>
+                <div class="des">
+                    <span>Silver Earring Collection</span>
+                    <h5>Spike Studs</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <h4>$22.00</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-plus cart"></i></a>
+            </div>
+
+            <div class="pro" data-long-desc="Elongated dangles with a brushed silver finish, oxidized at the tips to create a gradient from bright silver to deep charcoal. Elegant and dramatic in equal measure.">
+                <div class="img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1573223510256-a5a681bfae35?w=600&q=80&fit=crop" alt="Noir Drop Dangles">
+                </div>
+                <div class="des">
+                    <span>Silver Earring Collection</span>
+                    <h5>Noir Drop Dangles</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <h4>$42.00</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-plus cart"></i></a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Cart Modal -->
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="cart-close">&times;</span>
+            <h2>Your Cart</h2>
+            <div id="cart-items"></div>
+            <div id="cart-total">Total: $0.00</div>
+            <button id="checkout-btn">Checkout</button>
+        </div>
+    </div>
+
+    <!-- Product Modal -->
+    <div id="product-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="modal-body">
+                <img id="modal-image" src="" alt="Product Image">
+                <div class="modal-details">
+                    <span id="modal-short-desc" class="modal-series"></span>
+                    <h2 id="modal-name"></h2>
+                    <p id="modal-long-desc"></p>
+                    <div class="modal-actions">
+                        <label for="modal-quantity">Qty:</label>
+                        <input type="number" id="modal-quantity" min="1" value="1">
+                        <button id="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Collections Banners -->
+    <section id="collections" class="section-p1">
+        <div class="banner-box">
+            <div class="box-content">
+                <h4>Rings</h4>
+                <h2>Coil &amp; Crest</h2>
+                <span>Serpent Collection</span>
+                <button class="white"
+                    data-name="Serpent Ring Collection"
+                    data-short-desc="Rings"
+                    data-long-desc="Explore our Serpent Ring Collection — bold silver rings inspired by ancient symbolism and dark beauty. Each ring is cast from 925 sterling silver and finished by hand. Available in polished and oxidized finishes.">
+                    Discover
+                </button>
+            </div>
+        </div>
+        <div class="banner-box banner-box2">
+            <div class="box-content">
+                <h4>Necklaces</h4>
+                <h2>Void &amp; Light</h2>
+                <span>Celestial Series</span>
+                <button class="white"
+                    data-name="Celestial Necklace Series"
+                    data-short-desc="Necklaces"
+                    data-long-desc="Explore the Celestial Necklace Series — pendants and chains that capture the mysteries of the cosmos in sterling silver. From minimalist circles to layering sets, each piece is crafted to shine in the dark.">
+                    Discover
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- More Collections -->
+    <section id="more-collections">
+        <div class="banner-box mc-box1">
+            <div class="box-content">
+                <span>Bracelets</span>
+                <h2>Thorned</h2>
+                <h3>Cuff Series</h3>
+            </div>
+        </div>
+        <div class="banner-box mc-box2">
+            <div class="box-content">
+                <span>Earrings</span>
+                <h2>Geometric</h2>
+                <h3>Drop Collection</h3>
+            </div>
+        </div>
+        <div class="banner-box mc-box3">
+            <div class="box-content">
+                <span>Sets</span>
+                <h2>Noir Bundle</h2>
+                <h3>Layering Sets</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section id="newsletter" class="section-p1 section-m1">
+        <div class="newstext">
+            <h4>Stay in the Dark</h4>
+            <p>Receive exclusive updates, new arrivals, and <span>members-only offers</span></p>
+        </div>
+        <div class="form">
+            <input type="email" placeholder="Your email address">
+            <button class="normal">Subscribe</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="col">
+            <div class="footer-brand">Oculus Noctis</div>
+            <h4>Contact</h4>
+            <p><strong>Address:</strong> 123 Silver Lane, Noir District</p>
+            <p><strong>Phone:</strong> +1 (555) 234-5678</p>
+            <p><strong>Hours:</strong> 10:00 – 19:00, Mon – Sat</p>
+            <div class="follow">
+                <h4>Follow Us</h4>
+                <div class="social-icons">
+                    <a href="https://facebook.com"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
+                    <a href="https://instagram.com"><i class="fab fa-instagram"></i></a>
+                    <a href="https://pinterest.com"><i class="fab fa-pinterest-p"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <h4>Navigate</h4>
+            <a href="#">About Us</a>
+            <a href="#">Shipping Info</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms &amp; Conditions</a>
+            <a href="#">Contact Us</a>
+        </div>
+        <div class="col">
+            <h4>My Account</h4>
+            <a href="#">Sign In</a>
+            <a href="#">View Cart</a>
+            <a href="#">Wishlist</a>
+            <a href="#">Track Order</a>
+            <a href="#">Support</a>
+        </div>
+        <div class="col">
+            <h4>Craftsmanship</h4>
+            <p>All pieces are crafted from 925 sterling silver and individually quality-checked before shipping.</p>
+            <p style="margin-top:12px;">Free shipping on orders over $100.</p>
+            <p style="margin-top:8px;">30-day returns guaranteed.</p>
+        </div>
+        <div class="copyright">
+            <p>© 2026 Oculus Noctis — Silver Accessories. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
 </html>
