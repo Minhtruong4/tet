@@ -158,9 +158,8 @@ p {
    HERO
 ===================== */
 #hero {
-    background: linear-gradient(to right, rgba(0,0,0,0.85), rgba(0,0,0,0.4)),
-                url("assets/img/Untitled design.png") center/cover no-repeat;
-    height: 92vh;
+background: linear-gradient(to right, rgba(0,0,0,0.85), rgba(0,0,0,0.4)),
+                url("assets/img/Untitled design.png") center/cover no-repeat;    height: 92vh;
     width: 100%;
     padding: 0 80px;
     display: flex;
@@ -524,13 +523,11 @@ p {
     position: relative;
     overflow: hidden;
     cursor: pointer;
-    background: linear-gradient(to top, rgba(0,0,0,0.88) 0%, rgba(0,0,0,0.35) 60%, rgba(0,0,0,0.1) 100%),
-                url('assets/img/3.png') center/cover no-repeat;
+    background: linear-gradient(135deg, #181818 0%, #232323 100%);
 }
 
 #collections .banner-box2 {
-    background: linear-gradient(to top, rgba(0,0,0,0.88) 0%, rgba(0,0,0,0.35) 60%, rgba(0,0,0,0.1) 100%),
-                url('assets/img/Untitled design (5).png') center/cover no-repeat;
+    background: linear-gradient(135deg, #121212 0%, #1e1e1e 100%);
 }
 
 #collections .banner-box::before {
@@ -625,18 +622,9 @@ p {
     cursor: pointer;
 }
 
-.mc-box1 {
-    background: linear-gradient(to top, rgba(0,0,0,0.88) 0%, rgba(0,0,0,0.3) 70%, rgba(0,0,0,0.05) 100%),
-                url('assets/img/6 (2).png') center/cover no-repeat;
-}
-.mc-box2 {
-    background: linear-gradient(to top, rgba(0,0,0,0.88) 0%, rgba(0,0,0,0.3) 70%, rgba(0,0,0,0.05) 100%),
-                url('assets/img/8.png') center/cover no-repeat;
-}
-.mc-box3 {
-    background: linear-gradient(to top, rgba(0,0,0,0.88) 0%, rgba(0,0,0,0.3) 70%, rgba(0,0,0,0.05) 100%),
-                url('assets/img/8 (2).png') center/cover no-repeat;
-}
+.mc-box1 { background: linear-gradient(135deg, #161616 0%, #1f1f1f 100%); }
+.mc-box2 { background: linear-gradient(135deg, #131313 0%, #1c1c1c 100%); }
+.mc-box3 { background: linear-gradient(135deg, #111111 0%, #1a1a1a 100%); }
 
 #more-collections .banner-box::before {
     content: '';
