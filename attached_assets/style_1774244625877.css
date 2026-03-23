@@ -78,16 +78,9 @@ p {
     left: 0;
 }
 
-.logo-link {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-}
-
-.logo-img {
-    height: 56px;
-    width: auto;
-    display: block;
+.logo {
+    width: 370px;
+    height: 80px
 }
 
 #navbar {
@@ -165,8 +158,8 @@ p {
    HERO
 ===================== */
 #hero {
-    background: url('assets/img/hero.png') center center / cover no-repeat;
-    height: 92vh;
+background: linear-gradient(to right, rgba(0,0,0,0.85), rgba(0,0,0,0.4)),
+                url("assets/img/Untitled design.png") center/cover no-repeat;    height: 92vh;
     width: 100%;
     padding: 0 80px;
     display: flex;
@@ -181,7 +174,7 @@ p {
     content: '';
     position: absolute;
     inset: 0;
-    background: linear-gradient(to right, rgba(5,5,5,0.82) 0%, rgba(5,5,5,0.55) 55%, rgba(5,5,5,0.1) 100%);
+    background: radial-gradient(ellipse at 75% 50%, rgba(192,192,192,0.04) 0%, transparent 55%);
     pointer-events: none;
 }
 
