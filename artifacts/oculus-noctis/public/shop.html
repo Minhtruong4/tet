@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Shop all 925 sterling silver accessories at Oculus Noctis — rings, necklaces, bracelets and earrings for the bold.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Shop – Oculus Noctis</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <section id="header">
+        <a href="index.html">
+            <img src="assets/img/Oculus Noctis (2400 x 1198 px) (1).png" alt="Oculus Noctis" class="logo">
+        </a>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+            <span></span><span></span><span></span>
+        </button>
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html" class="active-page">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li id="lg-bag"><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+            </ul>
+        </div>
+    </section>
+    <div class="nav-overlay" id="nav-overlay"></div>
+
+    <!-- Page Banner -->
+    <div class="page-banner">
+        <h1>Shop</h1>
+        <p class="breadcrumb"><a href="index.html">Home</a><span>›</span>Shop</p>
+    </div>
+
+    <!-- Shop Layout -->
+    <div class="shop-layout">
+
+        <!-- Sidebar -->
+        <aside class="shop-sidebar">
+            <div class="sidebar-section">
+                <h5>Categories</h5>
+                <button class="filter-btn active" data-filter="all">All Products (16)</button>
+                <button class="filter-btn" data-filter="rings">Rings (6)</button>
+                <button class="filter-btn" data-filter="necklaces">Necklaces (4)</button>
+                <button class="filter-btn" data-filter="bracelets">Bracelets (4)</button>
+                <button class="filter-btn" data-filter="earrings">Earrings (4)</button>
+                <button class="filter-btn" data-filter="accessories">Accessories (2)</button>
+            </div>
+            <div class="sidebar-section">
+                <h5>Sort By</h5>
+                <button class="filter-btn active" data-sort="default">Featured</button>
+                <button class="filter-btn" data-sort="price-asc">Price: Low to High</button>
+                <button class="filter-btn" data-sort="price-desc">Price: High to Low</button>
+            </div>
+            <div class="sidebar-section">
+                <h5>Price Range</h5>
+                <div class="price-range">
+                    <span>$0</span>
+                    <input type="range" min="0" max="250" value="250" id="price-slider">
+                    <span id="price-max">$250</span>
+                </div>
+            </div>
+            <div class="sidebar-section">
+                <h5>Material</h5>
+                <button class="filter-btn active" data-filter="all">925 Sterling Silver</button>
+                <button class="filter-btn">Oxidized Silver</button>
+                <button class="filter-btn">Polished Silver</button>
+            </div>
+        </aside>
+
+        <!-- Product Grid -->
+        <div class="shop-main">
+            <div class="shop-top">
+                <p id="product-count">Showing 16 products</p>
+                <select class="sort-select" id="sort-select">
+                    <option value="default">Sort: Featured</option>
+                    <option value="price-asc">Price: Low to High</option>
+                    <option value="price-desc">Price: High to Low</option>
+                    <option value="name">Name: A–Z</option>
+                </select>
+            </div>
+
+            <div class="shop-grid pro-container" id="shop-grid">
+
+                <div class="pro" data-category="rings" data-price="28" data-long-desc="Delicately crafted from 925 sterling silver, the Crescent Moon Ring features a slender crescent arc that catches the light beautifully. Each curve is hand-polished to a mirror finish, giving it that distinctive silver shimmer. Perfect for stacking or wearing solo.">
+                    <div class="img-wrapper">
+                        <img src="assets/img/1.png" alt="Crescent Moon Ring">
+                    </div>
+                    <div class="des">
+                        <span>Silver Ring Collection</span>
+                        <h5>Crescent Moon Ring</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <h4>$28.00</h4>
+                    </div>
+                    <a href="product.html"><i class="fa-solid fa-cart-plus cart"></i></a>
+                </div>
+
+                <div class="pro" data-category="rings" data-price="35" data-long-desc="Inspired by ancient symbolism, this Serpent Coil Ring wraps around the finger in a graceful spiral. Crafted in oxidized sterling silver for depth and contrast, with polished scales that catch the eye. A bold statement piece.">
+                    <div class="img-wrapper">
+                        <img src="assets/img/2.png" alt="Serpent Coil Ring">
+                    </div>
+                    <div class="des">
+                        <span>Silver Ring Collection</span>
+                        <h5>Serpent Coil Ring</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <h4>$35.00</h4>
+                    </div>
+                    <a href="product.html"><i class="fa-solid fa-cart-plus cart"></i></a>
+                </div>
+
+                <div class="pro" data-category="rings" data-price="42" data-long-desc="A striking contrast of polished silver band with a natural obsidian centerpiece. The deep black stone absorbs the light while the silver frame radiates around it. Handcrafted and one-of-a-kind.">
+                    <div class="img-wrapper">
+                        <img src="assets/img/3.png" alt="Obsidian Stone Ring">
+                    </div>
+                    <div class="des">
+                        <span>Silver Ring Collection</span>
+                        <h5>Obsidian Stone Ring</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <h4>$42.00</h4>
+                    </div>
+                    <a href="product.html"><i class="fa-solid fa-cart-plus cart"></i></a>
+                </div>
+
+                <div class="pro" data-category="rings" data-price="55" data-long-desc="A timeless eternity band set with pavé-style silver beads running the full circumference. The uniform shimmer creates an unbroken circle of light. Elegant, minimal, and forever wearable.">
+                    <div class="img-wrapper">
+                        <img src="assets/img/4.png" alt="Eternity Band">
+                    </div>
+                    <div class="des">
+                        <span>Silver Ring Collection</span>
+                        <h5>Eternity Band</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <h4>$55.00</h4>
+                    </div>
+                    <a href="product.html"><i class="fa-solid fa-cart-plus cart"></i></a>
+                </div>
+
+                <div class="pro" data-category="necklaces" data-price="38" data-long-desc="A sleek teardrop pendant in brushed sterling silver hangs from a delicate 45cm chain. The subtle matte finish gives it a sophisticated, understated look that transitions seamlessly from day to night.">
+                    <div class="img-wrapper">
+                        <img src="assets/img/5.png" alt="Midnight Drop Pendant">
+                    </div>
+                    <div class="des">
+                        <span>Silver Necklace Collection</span>
+                        <h5>Midnight Drop Pendant</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <h4>$38.00</h4>
+                    </div>
+                    <a href="product.html"><i class="fa-solid fa-cart-plus cart"></i></a>
+                </div>
+
+                <div class="pro" data-category="necklaces" data-price="65" data-long-desc="A curated set of three layering necklaces — a simple chain, a moon pendant, and a star burst — designed to be worn together. Each piece is crafted in polished sterling silver and comes at different lengths for perfect layering.">
+                    <div class="img-wrapper">
+                        <img src="assets/img/6.png" alt="Celestial Layering Set">
+                    </div>
+                    <div class="des">
+                        <span>Silver Necklace Collection</span>
+                        <h5>Celestial Layering Set</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <h4>$65.00</h4>
+                    </div>
+                    <a href="product.html"><i class="fa-solid fa-cart-plus cart"></i></a>
+                </div>
+
+                <div class="pro" data-category="necklaces" data-price="48" data-long-desc="A boldly elegant choker featuring a sculpted raven feather cast in sterling silver. The feather's fine details are highlighted with a partial oxidized finish, creating beautiful shadow and depth.">
+                    <div class="img-wrapper">
+                        <img src="assets/img/7.png" alt="Raven Feather Choker">
+                    </div>
+                    <div class="des">
+                        <span>Silver Necklace Collection</span>
+                        <h5>Raven Feather Choker</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <h4>$48.00</h4>
+                    </div>
+                    <a href="product.html"><i class="fa-solid fa-cart-plus cart"></i></a>
+                </div>
+
+                <div class="pro" data-category="necklaces" data-price="32" data-long-desc="Minimalism at its finest — a perfect open circle in polished sterling silver. The simple geometry makes a powerful statement. Pair with a classic chain or a delicate cord. Ideal for everyday elegance.">
+                    <div class="img-wrapper">
+                        <img src="assets/img/8.png" alt="Void Circle Pendant">
+                    </div>
+                    <div class="des">
+                        <span>Silver Necklace Collection</span>
+                        <h5>Void Circle Pendant</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <h4>$32.00</h4>
+                    </div>
+                    <a href="product.html"><i class="fa-solid fa-cart-plus cart"></i></a>
+                </div>
+
+                <div class="pro" data-category="bracelets" data-price="60" data-long-desc="A bold open cuff bracelet in oxidized sterling silver with onyx stone inlay. The juxtaposition of matte black and polished silver creates a dramatic effect. Adjustable for most wrist sizes.">
+                    <div class="img-wrapper">
+                        <img src="assets/img/6 (2).png" alt="Onyx Cuff">
+                    </div>
+                    <div class="des">
+                        <span>Silver Bracelet Collection</span>
+                        <h5>Onyx Cuff</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <h4>$60.00</h4>
+                    </div>
+                    <a href="product.html"><i class="fa-solid fa-cart-plus cart"></i></a>
+                </div>
+
+                <div class="pro" data-category="bracelets" data-price="45" data-long-desc="Classic chunky chain links rendered in polished sterling silver. Each link is precisely cast and connected by hand. A versatile piece that works alone or layered with other bracelets.">
+                    <div class="img-wrapper">
+                        <img src="assets/img/7 (2).png" alt="Chain Link Bracelet">
+                    </div>
+                    <div class="des">
+                        <span>Silver Bracelet Collection</span>
+                        <h5>Chain Link Bracelet</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <h4>$45.00</h4>
+                    </div>
+                    <a href="product.html"><i class="fa-solid fa-cart-plus cart"></i></a>
+                </div>
+
+                <div class="pro" data-category="bracelets" data-price="52" data-long-desc="An architectural bangle studded with small spike details that run along the surface. Made from solid sterling silver, it's substantial enough to make a statement without being bulky.">
+                    <div class="img-wrapper">
+                        <img src="assets/img/9 (2).png" alt="Thorned Bangle">
+                    </div>
+                    <div class="des">
+                        <span>Silver Bracelet Collection</span>
+                        <h5>Thorned Bangle</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <h4>$52.00</h4>
+                    </div>
+                    <a href="product.html"><i class="fa-solid fa-cart-plus cart"></i></a>
+                </div>
+
+                <div class="pro" data-category="bracelets" data-price="38" data-long-desc="Three fine silver wires twisted together into a seamless braid. The intertwined structure catches light at every angle, creating a fluid, dynamic shimmer. Simple yet endlessly elegant.">
+                    <div class="img-wrapper">
+                        <img src="assets/img/1 (3).png" alt="Twisted Wire Bracelet">
+                    </div>
+                    <div class="des">
+                        <span>Silver Bracelet Collection</span>
+                        <h5>Twisted Wire Bracelet</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <h4>$38.00</h4>
+                    </div>
+                    <a href="product.html"><i class="fa-solid fa-cart-plus cart"></i></a>
+                </div>
+
+                <div class="pro" data-category="earrings" data-price="34" data-long-desc="Angular geometric drops in polished sterling silver that move beautifully with you. The faceted design refracts light in every direction, making even small movements shimmer.">
+                    <div class="img-wrapper">
+                        <img src="assets/img/Untitled design (5).png" alt="Geometric Drop Earrings">
+                    </div>
+                    <div class="des">
+                        <span>Silver Earring Collection</span>
+                        <h5>Geometric Drop Earrings</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <h4>$34.00</h4>
+                    </div>
+                    <a href="product.html"><i class="fa-solid fa-cart-plus cart"></i></a>
+                </div>
+
+                <div class="pro" data-category="earrings" data-price="28" data-long-desc="Sculptural crescent-shaped hoops that sit close to the ear. Crafted in polished sterling silver, they are lightweight yet visually impactful. A modern take on the classic hoop.">
+                    <div class="img-wrapper">
+                        <img src="assets/img/2 (3).png" alt="Crescent Hoops">
+                    </div>
+                    <div class="des">
+                        <span>Silver Earring Collection</span>
+                        <h5>Crescent Hoops</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <h4>$28.00</h4>
+                    </div>
+                    <a href="product.html"><i class="fa-solid fa-cart-plus cart"></i></a>
+                </div>
+
+                <div class="pro" data-category="earrings" data-price="22" data-long-desc="Small but powerful — sterling silver spike studs with a polished finish. These pair perfectly with any look, from casual to formal. Secure butterfly clasp for all-day comfort.">
+                    <div class="img-wrapper">
+                        <img src="assets/img/3 (3).png" alt="Spike Studs">
+                    </div>
+                    <div class="des">
+                        <span>Silver Earring Collection</span>
+                        <h5>Spike Studs</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <h4>$22.00</h4>
+                    </div>
+                    <a href="product.html"><i class="fa-solid fa-cart-plus cart"></i></a>
+                </div>
+
+                <div class="pro" data-category="earrings" data-price="42" data-long-desc="Elongated dangles with a brushed silver finish, oxidized at the tips to create a gradient from bright silver to deep charcoal. Elegant and dramatic in equal measure.">
+                    <div class="img-wrapper">
+                        <img src="assets/img/4 (2).png" alt="Noir Drop Dangles">
+                    </div>
+                    <div class="des">
+                        <span>Silver Earring Collection</span>
+                        <h5>Noir Drop Dangles</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <h4>$42.00</h4>
+                    </div>
+                    <a href="product.html"><i class="fa-solid fa-cart-plus cart"></i></a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="col">
+            <div class="footer-brand">Oculus Noctis</div>
+            <h4>Contact</h4>
+            <p><strong>Address:</strong> 123 Silver Lane, Noir District</p>
+            <p><strong>Phone:</strong> +1 (555) 234-5678</p>
+            <p><strong>Hours:</strong> 10:00 – 19:00, Mon – Sat</p>
+            <div class="follow">
+                <h4>Follow Us</h4>
+                <div class="social-icons">
+                    <a href="https://facebook.com"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
+                    <a href="https://instagram.com"><i class="fab fa-instagram"></i></a>
+                    <a href="https://pinterest.com"><i class="fab fa-pinterest-p"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <h4>Navigate</h4>
+            <a href="index.html">Home</a>
+            <a href="shop.html">Shop</a>
+            <a href="about.html">About</a>
+            <a href="blog.html">Blog</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div class="col">
+            <h4>My Account</h4>
+            <a href="#">Sign In</a>
+            <a href="cart.html">View Cart</a>
+            <a href="#">Wishlist</a>
+            <a href="#">Track Order</a>
+            <a href="contact.html">Support</a>
+        </div>
+        <div class="col">
+            <h4>Craftsmanship</h4>
+            <p>All pieces are crafted from 925 sterling silver and individually quality-checked before shipping.</p>
+            <p style="margin-top:12px;">Free shipping on orders over $100.</p>
+            <p style="margin-top:8px;">30-day returns guaranteed.</p>
+        </div>
+        <div class="copyright">
+            <p>© 2026 Oculus Noctis — Silver Accessories. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

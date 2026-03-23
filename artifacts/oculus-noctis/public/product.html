@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Crescent Moon Ring — 925 sterling silver, handcrafted by Oculus Noctis. Gothic elegance for the bold.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Crescent Moon Ring – Oculus Noctis</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <section id="header">
+        <a href="index.html">
+            <img src="assets/img/Oculus Noctis (2400 x 1198 px) (1).png" alt="Oculus Noctis" class="logo">
+        </a>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+            <span></span><span></span><span></span>
+        </button>
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html" class="active-page">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li id="lg-bag"><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+            </ul>
+        </div>
+    </section>
+    <div class="nav-overlay" id="nav-overlay"></div>
+
+    <!-- Breadcrumb -->
+    <div class="page-banner" style="height: 16vh; min-height:120px;">
+        <p class="breadcrumb">
+            <a href="index.html">Home</a><span>›</span>
+            <a href="shop.html">Shop</a><span>›</span>
+            Crescent Moon Ring
+        </p>
+    </div>
+
+    <!-- Product Detail -->
+    <div class="product-detail">
+
+        <!-- Images -->
+        <div class="product-images">
+            <img src="assets/img/1.png" alt="Crescent Moon Ring" class="product-main-img" id="main-product-img">
+            <div class="product-thumbs">
+                <img src="assets/img/1.png" alt="View 1" class="active" onclick="changeImg(this)">
+                <img src="assets/img/2.png" alt="View 2" onclick="changeImg(this)">
+                <img src="assets/img/3.png" alt="View 3" onclick="changeImg(this)">
+                <img src="assets/img/4.png" alt="View 4" onclick="changeImg(this)">
+            </div>
+        </div>
+
+        <!-- Info -->
+        <div class="product-info">
+            <span class="collection-label">Silver Ring Collection</span>
+            <h1>Crescent Moon Ring</h1>
+
+            <div class="product-stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <span>(48 reviews)</span>
+            </div>
+
+            <div class="product-price">$28.00</div>
+
+            <p class="product-description">
+                Delicately crafted from 925 sterling silver, the Crescent Moon Ring features a slender crescent arc that catches the light beautifully. Each curve is hand-polished to a mirror finish, giving it that distinctive silver shimmer that Oculus Noctis is known for.<br><br>
+                Designed for those who carry the night with them — this ring is equally at home in candlelight or daylight. Wears perfectly alone or stacked with other pieces from our ring collection.
+            </p>
+
+            <div class="product-meta">
+                <p><strong>Material</strong> 925 Sterling Silver</p>
+                <p><strong>Finish</strong> Mirror-polished</p>
+                <p><strong>Sizes</strong> 5 / 6 / 7 / 8 / 9</p>
+                <p><strong>Care</strong> Store in a dry place, polish with a silver cloth</p>
+                <p><strong>SKU</strong> ON-RING-001</p>
+                <p><strong>Availability</strong> In Stock — Ships in 2–3 business days</p>
+            </div>
+
+            <div class="product-actions">
+                <div class="qty-control">
+                    <button onclick="changeQty(-1)" type="button">−</button>
+                    <input type="number" value="1" min="1" max="99" id="detail-qty">
+                    <button onclick="changeQty(1)" type="button">+</button>
+                </div>
+                <button class="btn-addcart" onclick="addToCartFromDetail()">Add to Cart</button>
+                <button class="btn-wishlist" title="Add to Wishlist"><i class="fa-regular fa-heart"></i></button>
+            </div>
+
+            <div style="margin-top:32px; padding-top:24px; border-top:1px solid rgba(192,192,192,0.07); display:flex; gap:28px; flex-wrap:wrap;">
+                <span style="font-size:11px; color:#505050; letter-spacing:1px; display:flex; align-items:center; gap:8px;"><i class="fa-solid fa-truck" style="color:#666;"></i> Free shipping over $100</span>
+                <span style="font-size:11px; color:#505050; letter-spacing:1px; display:flex; align-items:center; gap:8px;"><i class="fa-solid fa-rotate-left" style="color:#666;"></i> 30-day returns</span>
+                <span style="font-size:11px; color:#505050; letter-spacing:1px; display:flex; align-items:center; gap:8px;"><i class="fa-solid fa-shield-halved" style="color:#666;"></i> Genuine 925 silver</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Related Products -->
+    <section id="product1" class="section-p1">
+        <h2>You May Also Like</h2>
+        <div class="section-sub">Silver Ring Collection</div>
+        <div class="pro-container">
+
+            <div class="pro" data-long-desc="Inspired by ancient symbolism, the Serpent Coil Ring wraps around the finger in a graceful spiral. Crafted in oxidized sterling silver.">
+                <div class="img-wrapper">
+                    <img src="assets/img/2.png" alt="Serpent Coil Ring">
+                </div>
+                <div class="des">
+                    <span>Silver Ring Collection</span>
+                    <h5>Serpent Coil Ring</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <h4>$35.00</h4>
+                </div>
+                <a href="product.html"><i class="fa-solid fa-cart-plus cart"></i></a>
+            </div>
+
+            <div class="pro" data-long-desc="A striking contrast of polished silver band with a natural obsidian centerpiece. Handcrafted and one-of-a-kind.">
+                <div class="img-wrapper">
+                    <img src="assets/img/3.png" alt="Obsidian Stone Ring">
+                </div>
+                <div class="des">
+                    <span>Silver Ring Collection</span>
+                    <h5>Obsidian Stone Ring</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <h4>$42.00</h4>
+                </div>
+                <a href="product.html"><i class="fa-solid fa-cart-plus cart"></i></a>
+            </div>
+
+            <div class="pro" data-long-desc="A timeless eternity band set with pavé-style silver beads. The uniform shimmer creates an unbroken circle of light.">
+                <div class="img-wrapper">
+                    <img src="assets/img/4.png" alt="Eternity Band">
+                </div>
+                <div class="des">
+                    <span>Silver Ring Collection</span>
+                    <h5>Eternity Band</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <h4>$55.00</h4>
+                </div>
+                <a href="product.html"><i class="fa-solid fa-cart-plus cart"></i></a>
+            </div>
+
+            <div class="pro" data-long-desc="Geometric drop earrings in polished sterling silver. The faceted design refracts light in every direction.">
+                <div class="img-wrapper">
+                    <img src="assets/img/Untitled design (5).png" alt="Geometric Drop Earrings">
+                </div>
+                <div class="des">
+                    <span>Silver Earring Collection</span>
+                    <h5>Geometric Drop Earrings</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <h4>$34.00</h4>
+                </div>
+                <a href="product.html"><i class="fa-solid fa-cart-plus cart"></i></a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="col">
+            <div class="footer-brand">Oculus Noctis</div>
+            <h4>Contact</h4>
+            <p><strong>Address:</strong> 123 Silver Lane, Noir District</p>
+            <p><strong>Phone:</strong> +1 (555) 234-5678</p>
+            <p><strong>Hours:</strong> 10:00 – 19:00, Mon – Sat</p>
+            <div class="follow">
+                <h4>Follow Us</h4>
+                <div class="social-icons">
+                    <a href="https://facebook.com"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
+                    <a href="https://instagram.com"><i class="fab fa-instagram"></i></a>
+                    <a href="https://pinterest.com"><i class="fab fa-pinterest-p"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <h4>Navigate</h4>
+            <a href="index.html">Home</a>
+            <a href="shop.html">Shop</a>
+            <a href="about.html">About</a>
+            <a href="blog.html">Blog</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div class="col">
+            <h4>My Account</h4>
+            <a href="#">Sign In</a>
+            <a href="cart.html">View Cart</a>
+            <a href="#">Wishlist</a>
+            <a href="#">Track Order</a>
+            <a href="contact.html">Support</a>
+        </div>
+        <div class="col">
+            <h4>Craftsmanship</h4>
+            <p>All pieces are crafted from 925 sterling silver and individually quality-checked before shipping.</p>
+            <p style="margin-top:12px;">Free shipping on orders over $100.</p>
+            <p style="margin-top:8px;">30-day returns guaranteed.</p>
+        </div>
+        <div class="copyright">
+            <p>© 2026 Oculus Noctis — Silver Accessories. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        function changeImg(el) {
+            document.getElementById('main-product-img').src = el.src;
+            document.querySelectorAll('.product-thumbs img').forEach(i => i.classList.remove('active'));
+            el.classList.add('active');
+        }
+
+        function changeQty(delta) {
+            const input = document.getElementById('detail-qty');
+            const newVal = Math.max(1, parseInt(input.value) + delta);
+            input.value = newVal;
+        }
+
+        function addToCartFromDetail() {
+            const qty = parseInt(document.getElementById('detail-qty').value) || 1;
+            const btn = document.querySelector('.btn-addcart');
+            btn.textContent = 'Added!';
+            btn.style.background = '#888';
+            setTimeout(() => {
+                btn.textContent = 'Add to Cart';
+                btn.style.background = '';
+                window.location.href = 'cart.html';
+            }, 800);
+        }
+    </script>
+</body>
+
+</html>

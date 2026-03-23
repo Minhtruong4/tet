@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Your shopping cart at Oculus Noctis — review items and proceed to checkout.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Cart – Oculus Noctis</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <section id="header">
+        <a href="index.html">
+            <img src="assets/img/Oculus Noctis (2400 x 1198 px) (1).png" alt="Oculus Noctis" class="logo">
+        </a>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+            <span></span><span></span><span></span>
+        </button>
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li id="lg-bag"><a href="cart.html" class="active-page"><i class="fa-solid fa-cart-shopping"></i></a></li>
+            </ul>
+        </div>
+    </section>
+    <div class="nav-overlay" id="nav-overlay"></div>
+
+    <!-- Page Banner -->
+    <div class="page-banner">
+        <h1>Shopping Cart</h1>
+        <p class="breadcrumb"><a href="index.html">Home</a><span>›</span>Cart</p>
+    </div>
+
+    <!-- Cart Layout -->
+    <div class="cart-layout">
+
+        <!-- Items Table -->
+        <div>
+            <table class="cart-table" id="cart-table">
+                <thead>
+                    <tr>
+                        <th>Product</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody id="cart-tbody">
+                    <!-- Populated by JS -->
+                </tbody>
+            </table>
+
+            <div class="cart-actions">
+                <a href="shop.html" class="btn-continue"><i class="fas fa-arrow-left"></i> Continue Shopping</a>
+                <button class="btn-update" id="update-cart">Update Cart</button>
+            </div>
+        </div>
+
+        <!-- Order Summary -->
+        <div class="cart-summary">
+            <h3>Order Summary</h3>
+            <div class="summary-row">
+                <span>Subtotal</span>
+                <span id="summary-subtotal">$0.00</span>
+            </div>
+            <div class="summary-row">
+                <span>Shipping</span>
+                <span id="summary-shipping">$0.00</span>
+            </div>
+            <div class="summary-row">
+                <span>Discount</span>
+                <span id="summary-discount">—</span>
+            </div>
+            <div class="coupon-row">
+                <input type="text" id="coupon-input" placeholder="Coupon code">
+                <button onclick="applyCoupon()">Apply</button>
+            </div>
+            <div class="summary-row total">
+                <span>Total</span>
+                <span id="summary-total">$0.00</span>
+            </div>
+            <button class="btn-checkout" onclick="proceedCheckout()">Proceed to Checkout</button>
+            <div class="payment-icons">
+                <i class="fab fa-cc-visa"></i>
+                <i class="fab fa-cc-mastercard"></i>
+                <i class="fab fa-cc-amex"></i>
+                <i class="fab fa-cc-paypal"></i>
+                <i class="fab fa-apple-pay"></i>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Recommended -->
+    <section id="product1" class="section-p1">
+        <h2>You Might Also Like</h2>
+        <div class="section-sub">Curated For You</div>
+        <div class="pro-container">
+
+            <div class="pro" data-long-desc="A bold open cuff bracelet in oxidized sterling silver with onyx stone inlay.">
+                <div class="img-wrapper">
+                    <img src="assets/img/6 (2).png" alt="Onyx Cuff">
+                </div>
+                <div class="des">
+                    <span>Silver Bracelet Collection</span>
+                    <h5>Onyx Cuff</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <h4>$60.00</h4>
+                </div>
+                <a href="product.html"><i class="fa-solid fa-cart-plus cart"></i></a>
+            </div>
+
+            <div class="pro" data-long-desc="Inspired by ancient symbolism, the Serpent Coil Ring wraps around the finger in a graceful spiral.">
+                <div class="img-wrapper">
+                    <img src="assets/img/2.png" alt="Serpent Coil Ring">
+                </div>
+                <div class="des">
+                    <span>Silver Ring Collection</span>
+                    <h5>Serpent Coil Ring</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <h4>$35.00</h4>
+                </div>
+                <a href="product.html"><i class="fa-solid fa-cart-plus cart"></i></a>
+            </div>
+
+            <div class="pro" data-long-desc="A curated set of three layering necklaces designed to be worn together.">
+                <div class="img-wrapper">
+                    <img src="assets/img/8 (2).png" alt="Celestial Layering Set">
+                </div>
+                <div class="des">
+                    <span>Silver Necklace Collection</span>
+                    <h5>Celestial Layering Set</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <h4>$65.00</h4>
+                </div>
+                <a href="product.html"><i class="fa-solid fa-cart-plus cart"></i></a>
+            </div>
+
+            <div class="pro" data-long-desc="Angular geometric drops in polished sterling silver that move beautifully with you.">
+                <div class="img-wrapper">
+                    <img src="assets/img/Untitled design (5).png" alt="Geometric Drop Earrings">
+                </div>
+                <div class="des">
+                    <span>Silver Earring Collection</span>
+                    <h5>Geometric Drop Earrings</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <h4>$34.00</h4>
+                </div>
+                <a href="product.html"><i class="fa-solid fa-cart-plus cart"></i></a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="col">
+            <div class="footer-brand">Oculus Noctis</div>
+            <h4>Contact</h4>
+            <p><strong>Address:</strong> 123 Silver Lane, Noir District</p>
+            <p><strong>Phone:</strong> +1 (555) 234-5678</p>
+            <p><strong>Hours:</strong> 10:00 – 19:00, Mon – Sat</p>
+            <div class="follow">
+                <h4>Follow Us</h4>
+                <div class="social-icons">
+                    <a href="https://facebook.com"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
+                    <a href="https://instagram.com"><i class="fab fa-instagram"></i></a>
+                    <a href="https://pinterest.com"><i class="fab fa-pinterest-p"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <h4>Navigate</h4>
+            <a href="index.html">Home</a>
+            <a href="shop.html">Shop</a>
+            <a href="about.html">About</a>
+            <a href="blog.html">Blog</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div class="col">
+            <h4>My Account</h4>
+            <a href="#">Sign In</a>
+            <a href="cart.html">View Cart</a>
+            <a href="#">Wishlist</a>
+            <a href="#">Track Order</a>
+            <a href="contact.html">Support</a>
+        </div>
+        <div class="col">
+            <h4>Craftsmanship</h4>
+            <p>All pieces are crafted from 925 sterling silver and individually quality-checked before shipping.</p>
+            <p style="margin-top:12px;">Free shipping on orders over $100.</p>
+            <p style="margin-top:8px;">30-day returns guaranteed.</p>
+        </div>
+        <div class="copyright">
+            <p>© 2026 Oculus Noctis — Silver Accessories. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        const DEMO_CART = [
+            { img: 'assets/img/1.png', name: 'Crescent Moon Ring', cat: 'Silver Ring Collection', price: 28, qty: 1 },
+            { img: 'assets/img/6 (2).png', name: 'Onyx Cuff', cat: 'Silver Bracelet Collection', price: 60, qty: 2 },
+            { img: 'assets/img/Untitled design (5).png', name: 'Geometric Drop Earrings', cat: 'Silver Earring Collection', price: 34, qty: 1 }
+        ];
+
+        function renderCart() {
+            const tbody = document.getElementById('cart-tbody');
+            tbody.innerHTML = '';
+            let subtotal = 0;
+
+            DEMO_CART.forEach((item, i) => {
+                const rowTotal = item.price * item.qty;
+                subtotal += rowTotal;
+                tbody.innerHTML += `
+                    <tr id="row-${i}">
+                        <td>
+                            <div class="cart-row-img">
+                                <img src="${item.img}" alt="${item.name}">
+                                <div>
+                                    <span class="cart-product-name">${item.name}</span>
+                                    <span class="cart-product-cat">${item.cat}</span>
+                                </div>
+                            </div>
+                        </td>
+                        <td>$${item.price.toFixed(2)}</td>
+                        <td>
+                            <div style="display:flex;align-items:center;gap:8px;">
+                                <div class="cart-qty-control">
+                                    <button onclick="changeCartQty(${i}, -1)" type="button">−</button>
+                                    <span id="qty-${i}">${item.qty}</span>
+                                    <button onclick="changeCartQty(${i}, 1)" type="button">+</button>
+                                </div>
+                                <button class="cart-remove" onclick="removeCartItem(${i})" title="Remove"><i class="fas fa-times"></i></button>
+                            </div>
+                        </td>
+                        <td>$${rowTotal.toFixed(2)}</td>
+                    </tr>
+                `;
+            });
+
+            const shipping = subtotal > 100 ? 0 : 7.99;
+            const total = subtotal + shipping;
+
+            document.getElementById('summary-subtotal').textContent = '$' + subtotal.toFixed(2);
+            document.getElementById('summary-shipping').textContent = shipping === 0 ? 'Free' : '$' + shipping.toFixed(2);
+            document.getElementById('summary-total').textContent = '$' + total.toFixed(2);
+
+            if (DEMO_CART.length === 0) {
+                tbody.innerHTML = `<tr><td colspan="4" style="text-align:center; padding:40px 0; color:#404040; font-size:13px; letter-spacing:1px;">Your cart is empty. <a href="shop.html" style="color:#909090;">Browse the shop →</a></td></tr>`;
+            }
+        }
+
+        function changeCartQty(index, delta) {
+            DEMO_CART[index].qty = Math.max(1, DEMO_CART[index].qty + delta);
+            renderCart();
+        }
+
+        function removeCartItem(index) {
+            DEMO_CART.splice(index, 1);
+            renderCart();
+        }
+
+        function applyCoupon() {
+            const code = document.getElementById('coupon-input').value.trim().toUpperCase();
+            if (code === 'NOCTIS10') {
+                document.getElementById('summary-discount').textContent = '−10%';
+                alert('Coupon applied: 10% off your order.');
+            } else {
+                alert('Invalid coupon code. Try NOCTIS10 for a demo discount.');
+            }
+        }
+
+        function proceedCheckout() {
+            alert('Checkout coming soon.\n\nThis is a UI demonstration.');
+        }
+
+        document.getElementById('update-cart').addEventListener('click', function() {
+            this.textContent = 'Updated ✓';
+            this.style.borderColor = 'rgba(192,192,192,0.5)';
+            this.style.color = '#c0c0c0';
+            setTimeout(() => {
+                this.textContent = 'Update Cart';
+                this.style.borderColor = '';
+                this.style.color = '';
+            }, 1500);
+        });
+
+        renderCart();
+    </script>
+</body>
+
+</html>
